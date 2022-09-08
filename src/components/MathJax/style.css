@@ -1,0 +1,19 @@
+/* .customtable{
+    text-align: center;
+} */
+.customtable figure {
+  padding: 6px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.customtable figure table {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #dadada;
+}
+.customtable figure table tbody tr td {
+  padding: 14px;
+}

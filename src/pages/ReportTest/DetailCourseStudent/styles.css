@@ -1,0 +1,138 @@
+.img-css {
+  text-align: -webkit-center !important;
+}
+
+.table {
+  border: 1px solid #dadada;
+}
+
+.table thead {
+  height: 64px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.table thead tr > th {
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+}
+
+.table tbody tr > td {
+  font-size: 15px;
+  position: relative;
+}
+
+.table thead tr > th:not(:last-child)::before,
+.table tbody tr > td:not(:last-child)::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 40%;
+  background-color: #dadada;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  content: '';
+}
+
+.column-option {
+  background: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.input-bg {
+  width: 280px;
+  height: 39px;
+  border-radius: 8px;
+}
+
+.column-option .flex-bg > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  /* identical to box height */
+
+  color: #1c1f37;
+}
+
+.title-bg2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #017efa;
+}
+
+.show-bg {
+  margin-left: 50px;
+}
+
+.ft-bg {
+  padding-bottom: 10px;
+  width: 96%;
+  margin: auto;
+}
+
+.filter-option {
+  width: 324px;
+  height: 300px;
+
+  background: #ffffff;
+  box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  position: absolute;
+  left: 66%;
+  display: none;
+  z-index: 1;
+  top: 27%;
+  cursor: pointer;
+}
+
+.filter-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 85%;
+  margin: auto;
+}
+
+.filter-content select {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.filter-content input {
+  border-radius: 8px;
+}
+
+.filter-content label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.export-option {
+  background: #ffffff;
+  z-index: 1;
+  top: 27%;
+  cursor: pointer;
+}
+
+.export-option div {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+#column-s,
+#filter-s,
+#export-s {
+  display: none;
+}

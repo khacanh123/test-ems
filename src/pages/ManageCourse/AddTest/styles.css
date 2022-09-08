@@ -1,0 +1,53 @@
+label {
+  color: #000;
+}
+
+.table-course thead {
+  height: 64px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.table-course {
+  border: 1px solid #dadada;
+}
+
+.table-course thead,
+.table-course tbody tr {
+  height: 64px;
+}
+
+.table-course thead tr > th {
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+}
+
+.table-course tbody tr > td {
+  font-size: 15px;
+  position: relative;
+  text-align: unset !important;
+}
+
+.table-course thead tr > th:not(:last-child)::before,
+.table-course tbody tr > td:not(:last-child)::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 40%;
+  background-color: #dadada;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  content: '';
+}
+
+.active-button {
+  background-color: #017efa !important;
+  color: #fff !important;
+}
+
+.active-button > .target {
+  background-color: #fff !important;
+  color: #017efa !important;
+}

@@ -1,0 +1,9 @@
+.thead::before {
+  content: '';
+  display: block;
+  height: 25px;
+  width: 1px;
+  position: absolute;
+  background: #e5e7eb;
+  transform: translateX(-10px);
+}

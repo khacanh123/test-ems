@@ -1,0 +1,12 @@
+.inputfill {
+  font: inherit;
+  display: inline-block;
+  border: 0;
+  width: 50px;
+  border-bottom: 2px solid black;
+}
+
+.inputfill:focus {
+  outline: none;
+  width: auto;
+}

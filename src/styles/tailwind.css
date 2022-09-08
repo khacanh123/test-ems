@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/SVN-Gilroy-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/SVN-Gilroy-Regular.otf');
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Gilroy', 'Be Vietnam Pro', 'Roboto', sans-serif;
+  color: #292c6f;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom scroll bar for all */
+
+::-webkit-scrollbar {
+  width: 14px;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid #ecedf3;
+  padding: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d4083;
+  border-radius: 10px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b52a7;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+
+/* ---------------- */
+
+.mantine-dggpsg {
+  padding: 0;
+}
+
+.time-runout {
+  animation: time-runout 5s linear forwards;
+}
+
+mjx-container.MathJax_Display {
+  display: inline !important;
+}
+
+mjx-container[jax='CHTML'][display='true'] {
+  display: inline !important;
+}
+
+.Wirisformula {
+  display: inline !important;
+}
+
+@keyframes time-runout {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
